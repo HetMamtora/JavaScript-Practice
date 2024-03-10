@@ -33,3 +33,17 @@ function local(){
     console.log(b);
 }
 local();
+console.log(a);
+
+//Anonymoys Function
+const fun = function(){
+    console.log("Hello");
+}
+fun();
+
+//Immediately invoked function
+(function(){
+    console.log("Hello");
+})()
+
+//Arrow Function
