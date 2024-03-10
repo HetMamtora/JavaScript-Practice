@@ -59,3 +59,17 @@ console.log(" ");
 console.log("TYPE-CONVERSION:")
 //Implecit Type Conversion
 
+result='3'+2;
+console.log(result);
+console.log(typeof result);
+
+//Explicit Type conversion
+result1=null;
+result1=String(result1);
+console.log(result1);
+console.log(typeof result1);
+
+console.log("");
+
+//OPERATORS
+//ARITHMETIC OPERATOR
