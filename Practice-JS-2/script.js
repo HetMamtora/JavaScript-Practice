@@ -1,4 +1,5 @@
 //VARIABLES
+console.log("VARIABLES:")
 //"use strict" // makes keyword mandatory to use
 b=5;
 console.log(b);
@@ -18,3 +19,43 @@ console.log(a3);
 const a4="Hello World"
 const a5=a4;
 console.log(a5);
+
+console.log(" ");
+
+//DATA-TYPES
+console.log("DATA-TYPES:")
+//1) PRIMITIVE DATA-TYPES
+//1.1 - Number
+const num=50;
+console.log(typeof num);
+
+//1.2 - String
+const str="Hello World";
+console.log(typeof str);
+
+//1.3 - Boolean
+const bool=true;
+console.log(typeof bool);
+
+//1.4 - Null
+const n=null;
+console.log(n);
+console.log(typeof n);
+
+//1.5 - Undefined
+let u;
+console.log(typeof u);
+
+//2) PRIMITIVE DATA-TYPES
+//2.1 - Object
+//2.2 - Array
+//2.3 - Function
+
+//STUDY LATER IN SESSION
+
+console.log(" ");
+
+//TYPE-CONVERSION
+console.log("TYPE-CONVERSION:")
+//Implecit Type Conversion
+
