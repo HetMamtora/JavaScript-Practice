@@ -72,4 +72,61 @@ console.log(typeof result1);
 console.log("");
 
 //OPERATORS
+console.log("OPERATORS:");
 //ARITHMETIC OPERATOR
+console.log("Arithmetic:");
+//Addition
+console.log(10 + 5);
+//Subtraction
+console.log(10 - 5);
+//Multiplication
+console.log(10 * 5);
+//Division
+console.log(10 / 5);
+//Modulo - Reminder
+console.log(10 % 5);
+//Power of first value
+console.log(10 ** 5);
+
+
+//INCRE-DECR OPERATOR
+console.log("Incr-Decr:");
+let i1=5;
+console.log(i1++); //POSTFIX
+let i2=5;
+console.log(++i1); //PREFIX
+let i3=5;
+i3++;
+console.log(i3);
+
+let i4=5;
+console.log(i4--);
+let i5=5;
+console.log(--i5);
+let i6=5;
+i6--;
+console.log(i6);
+
+//COMPARISON OPERATORS
+console.log("Comparison:");
+c1=5;
+c2=6;
+console.log(c1==c2);
+console.log(c1!=c2);
+console.log(c1>c2);
+console.log(c1>=c2);
+console.log(c1<c2);
+console.log(c1<=c2);
+
+//LOGICAL OPERATORS
+console.log("Logical:");
+
+console.log("logical OR:");
+console.log(4>3 || 5>4);
+
+console.log("logical AND:");
+console.log(4>3 && 5>4);
+
+console.log("logical NOT:");
+console.log(!true);
+console.log(!false);
