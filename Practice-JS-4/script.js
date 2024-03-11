@@ -169,4 +169,21 @@ console.log(new User("Thomas"));
 console.log("");
 
 //SYMBOL
+//A "Symbol" represents a unique identifier.
 console.log("SYMBOL:");
+const sym=Symbol("id");
+//const sym1=Symbol("id");
+console.log(sym.toString());
+console.log(sym.description);
+
+const id=Symbol("id");
+const obj_smb={
+    name:"Arthur",
+    age:20
+}
+obj_smb[id]=1;
+console.log(obj_smb[id]);
+
+for(const key in obj_smb){
+    console.log(key);
+}
