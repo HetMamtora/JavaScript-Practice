@@ -93,3 +93,31 @@ const num2=[60,70,80,90,100];
 console.log(num1.concat(num2));
 console.log(num1.indexOf(20));
 console.log(num1.reverse());
+
+
+//FOR-IN -- FOR-OF
+console.log("For-In & For-Of");
+
+let ary=[10,20,30,40];
+for(const ar in ary){
+    console.log(ar);
+    console.log(ary[ar]);
+}
+
+//MULTIDIMENSIONAL ARRAY
+const ard=[
+    ["john",30],
+    ["robert",22],
+    ["thomas",36]
+];
+console.log(ard);
+console.log(ard[1]);
+console.log(ard[1][1]);
+
+for(let i=0;i<ard.length;i++){
+    for(let j=0;j<ard[i].length;j++){
+        console.log(ard[i][j]);
+    }
+}
+
+//COPY AND SPREAD
