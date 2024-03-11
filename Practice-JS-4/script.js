@@ -72,3 +72,25 @@ function fun1(){
     fun2();
 }
 fun1();
+
+console.log("");
+
+//DEBUGGER
+console.log("DEBUGGER:")
+function fundeb(){
+    //debugger;
+    for(let i=1;i<=5;i++){
+        console.log(i);
+    }
+}
+fundeb();
+
+console.log("");
+
+//SETS
+console.log("SETS:");
+const arr_set=[10,20,30,40,50,30];
+console.log(arr_set);
+
+const s=new Set([10,20,30,40,50,30]); //takes only unique value - no repeated value
+console.log(s);
