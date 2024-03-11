@@ -121,3 +121,20 @@ for(let i=0;i<ard.length;i++){
 }
 
 //COPY AND SPREAD
+console.log("Copy & Spread:");
+const ar1=["John",202,true];
+const ar2=[...ar1]; //spread 
+ar2.push("Berg");
+console.log(ar1);
+console.log(ar2);
+
+//ARRAY DESTRUCTING
+console.log("ARRAY DESTRUCTING:");
+const array=["Thomas","Edison"];
+const item1=array[0];
+const item2=array[1];
+console.log(item1+" "+item2); //not good practice
+
+const [itm1,itm2]=array;
+console.log(item1);
+console.log(item2);
