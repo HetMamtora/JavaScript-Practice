@@ -27,6 +27,7 @@ function name3(a,b){
 console.log(name3(f1,f2));
 
 //local-global concept
+console.log("Local-Global Concept: ")
 const a=5; //global
 function local(){
     const b=3; //local 
@@ -36,14 +37,59 @@ local();
 console.log(a);
 
 //Anonymoys Function
+console.log("Anonymous Function:");
 const fun = function(){
     console.log("Hello");
 }
 fun();
 
 //Immediately invoked function
+console.log("Immediate Invoke Function:");
 (function(){
     console.log("Hello");
 })()
 
 //Arrow Function
+console.log("Arrow Function:");
+const a1=(a,b)=>{ 
+    return a+b;
+}
+console.log(a1(2,3));
+
+const a2=(a,b)=> console.log(a+b);
+console.log(a2(2,3));
+
+
+//ARRAYS 
+console.log("ARRAYS:");
+const arr1=["John","Jane","Rick"];
+console.log(arr1);
+console.log(arr1[1]);
+console.log(arr1.length);
+
+const arr2=["John",1,true,null,undefined];
+console.log(arr2);
+
+const arr3=["John",1,true,null,undefined];
+arr3.push("abc");
+console.log(arr3);
+arr3.unshift("bcd");
+console.log(arr3);
+arr3.splice(1,2,"splice");
+console.log(arr3);
+
+const arr4=[10,20,30,40,50];
+console.log(arr4);
+for(i=0;i<arr4.length;i++){
+    console.log(arr4[i]);
+}
+
+arr4.forEach((val,index,array)=>{
+    console.log("["+index+"] "+val+" - "+array);
+})
+
+const num1=[10,20,30,40,50];
+const num2=[60,70,80,90,100];
+console.log(num1.concat(num2));
+console.log(num1.indexOf(20));
+console.log(num1.reverse());
