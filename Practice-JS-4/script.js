@@ -13,7 +13,6 @@ const obj={
     arr:[20,30,40]
 
 }
-console
 console.log(obj.name);
 console.log(obj.age);
 console.log(obj["last name"]);
@@ -23,3 +22,53 @@ const itm="key2";
 obj.key="item1";
 obj[itm]="item2";
 console.log(obj);
+
+console.log(" ");
+
+//OBJECT INSIDE ARRAY
+console.log("OBJECT INSIDE ARRAY:");
+const arr=[
+    {user:1,name:"Thomas"},
+    {user:2,name:"Arthur"},
+    {user:3,name:"John"},
+]
+console.log(arr);
+
+for(const i in arr){
+    console.log(arr[i]);
+}
+
+const [item1,item2]=arr;
+console.log(item1);
+console.log(item2);
+
+console.log(" ");
+
+
+//FUNCTION INSIDE FUNCTIOn
+console.log("Function Inside Function:");
+
+function funn(){
+    console.log("Inside Function: 1");
+    function funn2(){
+        console.log("Inside Function: 2");
+    }
+    funn2();
+}
+funn();
+
+console.log(" ");
+
+//LEXICAL SCOPE
+console.log("Lexical Scope:");
+
+function fun1(){
+    const f1=1;
+    console.log("Inside Function:"+f1);
+    function fun2(){
+        const f1=2; //value inside same function
+        console.log("Inside Function:"+f1); //LEXICAL SCOPE [access values from outside function]
+    }
+    fun2();
+}
+fun1();
