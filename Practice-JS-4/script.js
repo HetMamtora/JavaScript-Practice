@@ -187,3 +187,60 @@ console.log(obj_smb[id]);
 for(const key in obj_smb){
     console.log(key);
 }
+
+
+console.log("");
+
+//PROTO
+console.log("PROTO: ");
+const obj_p1={
+    fName:"Thomas",
+};
+const obj_p2={
+    lName:"Shelby",
+};
+
+obj_p2.__proto__=obj_p1;
+console.log(obj_p2.fName);
+
+
+console.log("");
+
+//PROTO-TYPE
+console.log("PROTO-TYPE: ");
+function Person(name,age){
+    const person = Object.create(Person.prototype)
+    //const person={};
+    person.name = name;
+    person.age=age;
+    return person;
+}
+
+
+    Person.prototype.greet=function(){
+        console.log(`Hello ${this.name}`);
+}
+
+const user=Person("Arthur",30);
+user.greet();
+console.log(user);
+//console.log(Person.prototype);
+
+
+console.log(" ");
+
+//CLASSES
+console.log("CLASS:");
+class Person1{
+    constructor(name,age){
+        this.name=name;
+        this.age=age;
+    }
+    greets(){
+        console.log(`Hello ${this.name}`);
+    }
+}
+
+const user1=new Person("Arthur",30);
+user1.greets();
+console.log(user1);
