@@ -58,7 +58,7 @@ function approved(){
 
 
 loadingData(function(){
-    collectingData(function(){ //funciton inside function creates call back hell
+    collectingData(function(){ //funciton inside function creates call back hell can be resolved using promise
         approvingData();
         approved();
     });
@@ -67,11 +67,34 @@ loadingData(function(){
 
 
 
-//console.log("");
+console.log("");
 
 //PROMISE
-//console.log("PROMISE:");
+console.log("PROMISE:");
 
+function funp(task){
+    return new Promise((resolve,reject)=>{
+        if(task){
+            resolve("Completed");
+        }
+        else{
+            reject("Not Completed");
+        }
+    })
+}
+
+const onResolve = (res)=>{
+    console.log(res);
+}
+const onReject = (err)=>{
+    console.log(err);
+}
+
+funp(true).then(onResolve).catch(onReject);
+funp(false).then(onResolve).catch(onReject);
+
+//resolving callback hell with promise
+//check video
 
 //console.log("");
 
