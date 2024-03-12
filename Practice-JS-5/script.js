@@ -15,11 +15,6 @@ function fun(){
 }
 console.log("is");
 
-//console.log("");
-
-//SET TIMEOUT
-//console.log("SET TIMEOUT:");
-
 
 console.log("");
 
@@ -41,11 +36,35 @@ console.log("");
 //CALL-BACK HELL
 console.log("CALL-BACK HELL:");
 
+function loadingData(callback){
+    setTimeout(()=>{
+        console.log("1) Loading Data...");
+        callback();
+    },4000);
+};
+function collectingData(callback){
+        setTimeout(()=>{
+            console.log("2) Collecting Data...");    //CALL BACK HELL TAKES ANOTHER TIME 
+            callback();
+        },5000)
+        
+};
+function approvingData(){
+    console.log("3) Approving Data...");
+}
+function approved(){
+    console.log("4) Data Approved.");
+}
 
-loadingData();
-collectingData();
-approvingData();
-approved();
+
+loadingData(function(){
+    collectingData(function(){ //funciton inside function creates call back hell
+        approvingData();
+        approved();
+    });
+    
+});
+
 
 
 //console.log("");
