@@ -96,7 +96,16 @@ funp(false).then(onResolve).catch(onReject);
 //resolving callback hell with promise
 //check video
 
-//console.log("");
+console.log("");
 
 //ASYNC_AWAIT
-//console.log("ASYNC_AWAIT:");
+console.log("ASYNC_AWAIT:");
+async function ex(){
+    await loadingData();
+    await collectingData();
+    await approvingData();
+    await approved();
+}
+ex().then(collectingData).catch((err)=>{
+    console.log(err);
+});
