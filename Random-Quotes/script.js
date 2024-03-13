@@ -10,3 +10,10 @@ const quote = [
             "It is hard to fail, but it is worse never to have tried to succeed.",
             "If you want to live a happy life, tie it to a goal, not to people or things"
 ];
+
+btn.addEventListener("click",()=>{
+    console.log("clicked");
+
+    const random = Math.floor(Math.random()*quote.length);
+    output.textContent = quote[random];
+})
