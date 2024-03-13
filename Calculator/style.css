@@ -17,7 +17,7 @@ body{
 }
 .calc{
     padding: 20px;
-    background: grey;
+    background: rgb(51, 51, 51);
     border-radius: 20px;
     box-shadow: -1px -1px 10px 10px white;
 }
@@ -51,4 +51,14 @@ button{
     background-color: beige;
     color: black;
     font-weight: bold;
+}
+
+
+span {
+  content: "\00A9";
+  color: rgb(236, 150, 70);
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
